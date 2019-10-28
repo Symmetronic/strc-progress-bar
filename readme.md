@@ -8,13 +8,13 @@ A simple progress bar.
 
 ### Script tag
 
-- Put a script tag similar to this `<script src='https://unpkg.com/strc-progress-bar@0.0.1/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@0.0.1/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 
 - Run `npm install strc-progress-bar --save`
-- Put a script tag similar to this `<script src='node_modules/strc-progress-bar/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Put the following script tag `<script src='node_modules/strc-progress-bar/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
