@@ -1,6 +1,6 @@
 {
   "name": "strc-progress-bar",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A simple progress bar.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

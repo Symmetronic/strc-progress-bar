@@ -8,26 +8,26 @@ A simple progress bar.
 
 ### Script tag
 
-- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@0.0.1/dist/strc-progress-bar.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, html etc
+- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@1.0.0/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ### Node Modules
 
 - Run `npm install strc-progress-bar --save`
 - Put the following script tag `<script src='node_modules/strc-progress-bar/dist/strc-progress-bar.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, html etc
+- Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ### In a stencil-starter app
 
 - Run `npm install strc-progress-bar --save`
 - Add an import to the npm packages `import strc-progress-bar;`
-- Then you can use the element anywhere in your template, JSX, html etc
+- Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ## API
 
 ### Updating progress
 
-Set the progress as a HTML attribute between 0 and 1.
+Set the progress as a JSX or HTML attribute between 0 and 1.
 
 ```html
 <strc-progress-bar
