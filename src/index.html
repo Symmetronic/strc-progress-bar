@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Symmetronic Progress Bar</title>
+
+  <script type="module" src="/build/strc-progress-bar.esm.js"></script>
+  <script nomodule src="/build/strc-progress-bar.js"></script>
+
+  <style>
+    strc-progress-bar {
+      --strc-progress-bar-background-color: #cccccc;
+      --strc-progress-bar-progress-color: #ff0000;
+      --strc-progress-bar-height: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <strc-progress-bar
+    progress='0.6'
+  />
+
+</body>
+</html>

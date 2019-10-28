@@ -1,0 +1,11 @@
+:host {
+  background-color: var(--strc-progress-bar-background-color, #999999);
+  display: block;
+  height: var(--strc-progress-bar-height, 2px);
+  width: 100%;
+}
+
+div {
+  background-color: var(--strc-progress-bar-progress-color, #000000);
+  height: 100%;
+}
