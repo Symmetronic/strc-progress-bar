@@ -8,7 +8,7 @@ A simple progress bar.
 
 ### Script tag
 
-- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.1/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.2/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ### Node Modules
@@ -43,8 +43,8 @@ You can adjust the style of the progress bar using CSS variables.
 strc-progress-bar {
   --strc-progress-bar-color: red;
   --strc-progress-bar-background-color: gray;
-  --strc-progress-bar-height: 5px;
-  --strc-progress-bar-transition-duration: 0.25s;
+  --strc-progress-bar-height: 3px;
+  --strc-progress-bar-transition-duration: 0.2s;
 }
 ```
 
