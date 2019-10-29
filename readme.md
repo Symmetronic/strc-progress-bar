@@ -8,7 +8,7 @@ A simple progress bar.
 
 ### Script tag
 
-- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.0/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.1/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ### Node Modules
