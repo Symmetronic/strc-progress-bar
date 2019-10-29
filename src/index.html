@@ -10,17 +10,26 @@
 
   <style>
     strc-progress-bar {
-      --strc-progress-bar-background-color: #cccccc;
-      --strc-progress-bar-progress-color: #ff0000;
-      --strc-progress-bar-height: 2px;
+      --strc-progress-bar-color: red;
+      --strc-progress-bar-background-color: gray;
+      --strc-progress-bar-height: 5px;
+      --strc-progress-bar-transition-duration: 0.5s;
     }
   </style>
 </head>
 <body>
 
-  <strc-progress-bar
-    progress='0.6'
-  />
+  <strc-progress-bar />
+
+  <script>
+    const progressBar = document.querySelector('strc-progress-bar');
+    let progress = 0.0;
+    setInterval(() => {
+      progress += 0.1;
+      if (progress > 1.0) progress = 0.0;
+      progressBar.setAttribute('progress', progress);
+    }, 1000);
+  </script>
 
 </body>
 </html>
