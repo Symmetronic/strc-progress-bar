@@ -4,6 +4,8 @@
 
 A simple progress bar.
 
+![The progress bar component](/assets/progress-bar.png)
+
 ## Using this component
 
 ### Script tag
