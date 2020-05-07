@@ -35,6 +35,7 @@ import {
   applyPolyfills,
   defineCustomElements as defineStrcProgressBar,
 } from 'strc-progress-bar/loader';
+
 applyPolyfills().then(() => {
   defineStrcProgressBar();
 });
@@ -43,10 +44,12 @@ applyPolyfills().then(() => {
 - If you use React with TypeScript, add types in the following way:
 
 ```typescript
+import { Components as StrcProgressBarComponents } from 'strc-progress-bar';
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'strc-progress-bar': Components.StrcProgressBar,
+      'strc-progress-bar': StrcProgressBarComponents.StrcProgressBar,
     }
   }
 }
