@@ -10,7 +10,7 @@ A simple progress bar.
 
 ### Script tag
 
-- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.5/dist/strc-progress-bar.js'></script>` in the head of your index.html
+- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.6/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, HTML, etc.
 
 ### Node Modules
@@ -19,11 +19,40 @@ A simple progress bar.
 - Put the following script tag `<script src='node_modules/strc-progress-bar/dist/strc-progress-bar.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, HTML, etc.
 
-### In a stencil-starter app
+### In a Stencil app
 
 - Run `npm install strc-progress-bar --save`
 - Add an import to the npm packages `import strc-progress-bar;`
-- Then you can use the element anywhere in your template, JSX, HTML, etc.
+- Then you can use the element anywhere in your Stencil app.
+
+### In a React app
+
+- Run `npm install strc-progress-bar --save`
+- Define custom element:
+
+```javascript
+import {
+  applyPolyfills,
+  defineCustomElements as defineStrcProgressBar,
+} from 'strc-progress-bar/loader';
+applyPolyfills().then(() => {
+  defineStrcProgressBar();
+});
+```
+
+- If you use React with TypeScript, add types in the following way:
+
+```typescript
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'strc-progress-bar': Components.StrcProgressBar,
+    }
+  }
+}
+```
+
+- Then you can use the element anywhere in your React app.
 
 ## API
 
