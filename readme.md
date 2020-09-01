@@ -4,7 +4,7 @@
 
 A simple progress bar.
 
-![The progress bar component](/assets/progress-bar.png)
+![The progress bar component](/assets/progress-bar.gif)
 
 ## Using this component
 
