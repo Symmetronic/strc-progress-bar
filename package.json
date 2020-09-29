@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/Symmetronic/strc-progress-bar/issues"
   },
-  "homepage": "https://github.com/Symmetronic/strc-progress-bar#readme",
-  "author": "Symmetronic <simon@symmetronic.com>",
+  "homepage": "https://symmetronic.github.io/strc-progress-bar/",
+  "author": "Simon Hochholzer <simon@symmetronic.com>",
   "license": "MIT"
 }
