@@ -2,6 +2,12 @@
   "name": "strc-progress-bar",
   "version": "2.0.9",
   "description": "A simple progress bar.",
+  "keywords": [
+    "custom elements",
+    "minimalist",
+    "progress bar",
+    "web components"
+  ],
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
   "es2015": "dist/esm/index.mjs",
