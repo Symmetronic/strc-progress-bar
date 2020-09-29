@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/Symmetronic/strc-progress-bar.svg?branch=master)](https://travis-ci.com/Symmetronic/strc-progress-bar) [![GitHub License](https://img.shields.io/github/license/Symmetronic/strc-progress-bar)](https://github.com/Symmetronic/strc-progress-bar/blob/master/LICENSE) [![npm Version](https://img.shields.io/npm/v/strc-progress-bar)](https://www.npmjs.com/package/strc-progress-bar) [![npm Downloads](https://img.shields.io/npm/dm/strc-progress-bar)](https://npmcharts.com/compare/strc-progress-bar?minimal=true)
 
-# Symmetronic Progress Bar
+# Simple Progress Bar
 
 A simple progress bar.
 
