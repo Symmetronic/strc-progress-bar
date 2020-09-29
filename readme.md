@@ -4,28 +4,24 @@
 
 A simple progress bar.
 
-![The progress bar component](/assets/progress-bar.gif)
+![Progress Bar Component](/assets/progress-bar.gif)
 
-## Using this component
+## Usage
 
-### Script tag
+This component is implemented as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Hence it can be used in almost any setup you are using.
 
-- Put the following script tag `<script src='https://unpkg.com/strc-progress-bar@2.0.9/dist/strc-progress-bar.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, HTML, etc.
+### Vanilla JS
 
-### Node Modules
+- Put the following script tags in the head of your HTML file:
 
-- Run `npm install strc-progress-bar --save`
-- Put the following script tag `<script src='node_modules/strc-progress-bar/dist/strc-progress-bar.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, HTML, etc.
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@2/dist/strc-progress-bar/strc-progress-bar.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@2/dist/strc-progress-bar/strc-progress-bar.js"></script>
+```
 
-### In a Stencil app
+- Then you can use the element anywhere in your app.
 
-- Run `npm install strc-progress-bar --save`
-- Add an import to the npm packages `import strc-progress-bar;`
-- Then you can use the element anywhere in your Stencil app.
-
-### In a React app
+### React
 
 - Run `npm install strc-progress-bar --save`
 - Define custom element:
@@ -55,7 +51,35 @@ declare global {
 }
 ```
 
-- Then you can use the element anywhere in your React app.
+- Then you can use the element anywhere in your [React](https://reactjs.org) app.
+
+### Vue
+
+- Run `npm install strc-progress-bar --save`
+- Define custom element in your main file:
+
+```javascript
+import {
+  applyPolyfills,
+  defineCustomElements as defineStrcProgressBar,
+} from 'strc-progress-bar/loader';
+
+// Tell Vue to ignore all components defined in strc-progress-bar package
+Vue.config.ignoredElements = [/strc-progress-bar\w*/];
+
+// Bind custom elements to window object
+applyPolyfills().then(() => {
+  defineStrcProgressBar();
+});
+```
+
+- Then you can use the element anywhere in your [Vue](https://vuejs.org) app.
+
+### Stencil
+
+- Run `npm install strc-progress-bar --save`
+- Add an import to the npm packages `import strc-progress-bar;`
+- Then you can use the element anywhere in your [Stencil](https://stenciljs.com) app.
 
 ## API
 
