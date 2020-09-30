@@ -8,6 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface StrcProgressBar {
         /**
+          * True, if the progress bar should fade out when complete.
+         */
+        "fadeOut": boolean;
+        /**
           * The current progress as number between 0.0 and 1.0 (equals 100%).
          */
         "progress": number;
@@ -26,6 +30,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface StrcProgressBar {
+        /**
+          * True, if the progress bar should fade out when complete.
+         */
+        "fadeOut"?: boolean;
         /**
           * The current progress as number between 0.0 and 1.0 (equals 100%).
          */
