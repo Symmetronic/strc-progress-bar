@@ -15,8 +15,8 @@ This component is implemented as a [custom element](https://developer.mozilla.or
 - Put the following script tags in the head of your HTML file:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@2/dist/strc-progress-bar/strc-progress-bar.esm.js"></script>
-<script nomodule="" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@2/dist/strc-progress-bar/strc-progress-bar.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@3/dist/strc-progress-bar/strc-progress-bar.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@3/dist/strc-progress-bar/strc-progress-bar.js"></script>
 ```
 
 - Then you can use the element anywhere in your app.
@@ -81,7 +81,7 @@ applyPolyfills().then(() => {
 - Add an import to the npm package
 
 ```typescript
-import 'strc-progress-bar';
+import 'strc-progress-bar/dist';
 ```
 
 - Then you can use the element anywhere in your [Stencil](https://stenciljs.com) app.
