@@ -12,6 +12,7 @@
     strc-progress-bar {
       --strc-progress-bar-color: red;
       --strc-progress-bar-background-color: gray;
+      --strc-progress-bar-fade-out-duration: 0.5s;
       --strc-progress-bar-height: 3px;
       --strc-progress-bar-transition-duration: 0.2s;
     }
@@ -19,16 +20,35 @@
 </head>
 <body>
 
-  <strc-progress-bar />
+  <strc-progress-bar fade-out='true' />
 
   <script>
+    function updateProgress(progressBar, progress) {
+      // Determine new progress
+      if (progress === 1.0) {
+        progress = 0.0;
+      } else {
+        const deltaProgress = 1/10 * Math.random();
+        progress += deltaProgress;
+        if (progress > 1.0) progress = 1.0;
+      }
+
+      // Update progress
+      progressBar.progress = progress;
+
+      // Update progress bar
+      const deltaTime = (progress >= 1.0)
+        ? 2000
+        : Math.round(900 * Math.random() + 100);
+      setTimeout(
+        () => { updateProgress(progressBar, progress); },
+        deltaTime
+      );
+    }
+
+    // Init program
     const progressBar = document.querySelector('strc-progress-bar');
-    let progress = 0.0;
-    setInterval(() => {
-      progress += 0.1;
-      if (progress > 1.0) progress = 0.0;
-      progressBar.setAttribute('progress', progress);
-    }, 1000);
+    updateProgress(progressBar, 0.0);
   </script>
 
 </body>

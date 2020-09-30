@@ -4,7 +4,16 @@
   display: block;
   height: 2px;
   height: var(--strc-progress-bar-height, 2px);
+  opacity: 1.0;
   width: 100%;
+}
+:host(.fade-out) {
+  opacity: 0.0;
+  pointer-events: none;
+  transition-duration: 0.75s;
+  transition-duration: var(--strc-progress-bar-fade-out-duration, 0.75s);
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
 
 div {
