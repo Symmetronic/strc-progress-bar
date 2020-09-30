@@ -1,4 +1,10 @@
-import { Component, h, Prop, Watch } from '@stencil/core';
+import {
+  Component,
+  h,
+  Host,
+  Prop,
+  Watch,
+} from '@stencil/core';
 
 /**
  * A simple progress bar.
@@ -9,6 +15,11 @@ import { Component, h, Prop, Watch } from '@stencil/core';
   shadow: true
 })
 export class ProgressBar {
+
+  /**
+   * True, if the progress bar should fade out when complete.
+   */
+  @Prop() fadeOut: boolean = false;
 
   /**
    * The current progress as number between 0.0 and 1.0 (equals 100%).
@@ -36,11 +47,17 @@ export class ProgressBar {
    */
   render() {
     return (
-      <div
-        style={{
-          width: (this.progress * 100) + '%'
+      <Host
+        class={{
+          'fade-out': this.fadeOut && this.progress >= 1.0
         }}
-      />
+      >
+        <div
+          style={{
+            width: (this.progress * 100) + '%'
+          }}
+        />
+      </Host>
     );
   }
 }
