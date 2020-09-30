@@ -6,7 +6,7 @@ A simple progress bar.
 
 ![Progress Bar Component](/assets/progress-bar.gif)
 
-## Usage
+## Importing
 
 This component is implemented as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Hence it can be imported in almost any setup you are using.
 
