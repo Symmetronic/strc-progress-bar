@@ -22,13 +22,30 @@
   <strc-progress-bar />
 
   <script>
-    const progressBar = document.querySelector('strc-progress-bar');
-    let progress = 0.0;
-    setInterval(() => {
-      progress += 0.1;
-      if (progress > 1.0) progress = 0.0;
+    function updateProgress(progressBar, progress) {
+      // Determine new progress
+      if (progress === 1.0) {
+        progress = 0.0;
+      } else {
+        const deltaProgress = 1/10 * Math.random();
+        progress += deltaProgress;
+        if (progress > 1.0) progress = 1.0;
+      }
+
+      // Update progress
       progressBar.setAttribute('progress', progress);
-    }, 1000);
+
+      // Update progress bar
+      const deltaTime = Math.round(990 * Math.random() + 10);
+      setTimeout(
+        () => { updateProgress(progressBar, progress); },
+        deltaTime
+      );
+    }
+
+    // Init program
+    const progressBar = document.querySelector('strc-progress-bar');
+    updateProgress(progressBar, 0.0);
   </script>
 
 </body>
