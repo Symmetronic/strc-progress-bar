@@ -8,9 +8,9 @@ A simple progress bar.
 
 ## Usage
 
-This component is implemented as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Hence it can be used in almost any setup you are using.
+This component is implemented as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Hence it can be imported in almost any setup you are using.
 
-### Vanilla JS
+### CDN
 
 - Put the following script tags in the head of your HTML file:
 
@@ -56,7 +56,7 @@ declare global {
 ### Vue
 
 - Run `npm install strc-progress-bar --save`
-- Define custom element in your main file:
+- Define custom element:
 
 ```javascript
 import {
@@ -78,7 +78,12 @@ applyPolyfills().then(() => {
 ### Stencil
 
 - Run `npm install strc-progress-bar --save`
-- Add an import to the npm packages `import strc-progress-bar;`
+- Add an import to the npm package
+
+```typescript
+import 'strc-progress-bar';
+```
+
 - Then you can use the element anywhere in your [Stencil](https://stenciljs.com) app.
 
 ## API
