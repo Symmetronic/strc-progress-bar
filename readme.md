@@ -90,7 +90,7 @@ import 'strc-progress-bar';
 
 ### Updating progress
 
-Set the `progress` as a JSX or HTML attribute between 0 and 1. If the `fade-out` attribute is set to `'true'`, the progress bar will fade out when it is complete (i.e. the progress is larger than or equal to 1).
+Set the `progress` as a JSX or HTML attribute between 0 and 1. If the `fade-out` attribute is set to 'true', the progress bar will fade out when it is complete (i.e. the progress is larger than or equal to 1).
 
 ```html
 <strc-progress-bar
