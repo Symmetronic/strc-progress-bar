@@ -90,11 +90,12 @@ import 'strc-progress-bar';
 
 ### Updating progress
 
-Set the progress as a JSX or HTML attribute between 0 and 1.
+Set the `progress` as a JSX or HTML attribute between 0 and 1. If the `fade-out` attribute is set to `'true'`, the progress bar will fade out when it is complete (i.e. the progress is larger than or equal to 1).
 
 ```html
 <strc-progress-bar
   progress='0.6'
+  fade-out='true'
 />
 ```
 
@@ -104,10 +105,23 @@ You can adjust the style of the progress bar using CSS variables.
 
 ```css
 strc-progress-bar {
+  /* Color of progress bar */
   --strc-progress-bar-color: red;
+
+  /* Background color of progress bar */
   --strc-progress-bar-background-color: gray;
+
+  /* Height of progress bar */
   --strc-progress-bar-height: 3px;
+
+  /* Duration of animated progress transitions */
   --strc-progress-bar-transition-duration: 0.2s;
+  
+  /*
+   * Duration of fade out when progress is complete.
+   * Only takes effect, if the fade-out attribute is set to 'true'
+   */
+  --strc-progress-bar-fade-out-duration: 0.75s;
 }
 ```
 
