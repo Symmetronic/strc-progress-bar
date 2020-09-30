@@ -19,7 +19,7 @@ export class ProgressBar {
   /**
    * True, if the progress bar should fade out when complete.
    */
-  @Prop() fadeOut: boolean = false;
+  @Prop() fadeOut: boolean = true;
 
   /**
    * The current progress as number between 0.0 and 1.0 (equals 100%).
