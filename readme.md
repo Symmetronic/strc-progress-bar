@@ -16,7 +16,7 @@ This component is implemented as a [custom element](https://developer.mozilla.or
 
 ```html
 <script type="module">
-  import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/strc-progress-bar@3/loader/index.es2017.js';
+  import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/strc-progress-bar@4/loader/index.es2017.js';
   defineCustomElements();
 </script>
 ```
