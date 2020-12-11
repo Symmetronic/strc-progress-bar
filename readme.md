@@ -12,11 +12,13 @@ This component is implemented as a [custom element](https://developer.mozilla.or
 
 ### CDN
 
-- Put the following script tags in the head of your HTML file:
+- Put the following script tag in the head of your HTML file:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@3/dist/strc-progress-bar/strc-progress-bar.esm.js"></script>
-<script nomodule="" src="https://cdn.jsdelivr.net/npm/strc-progress-bar@3/dist/strc-progress-bar/strc-progress-bar.js"></script>
+<script type="module">
+  import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/strc-progress-bar@3/loader/index.es2017.js';
+  defineCustomElements();
+</script>
 ```
 
 - Then you can use the element anywhere in your app.
