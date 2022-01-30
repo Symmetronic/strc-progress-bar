@@ -10,12 +10,11 @@ import {
  * A simple progress bar.
  */
 @Component({
-  tag: 'strc-progress-bar',
-  styleUrl: 'progress-bar.css',
-  shadow: true
+  tag: "strc-progress-bar",
+  styleUrl: "progress-bar.css",
+  shadow: true,
 })
 export class ProgressBar {
-
   /**
    * True, if the progress bar should fade out when complete.
    */
@@ -24,13 +23,13 @@ export class ProgressBar {
   /**
    * The current progress as number between 0.0 and 1.0 (equals 100%).
    */
-  @Prop() progress: number = 0.0;
+  @Prop({ mutable: true }) progress: number = 0.0;
 
   /**
    * Assures that the value is between 0.0 and 1.0.
    * @param newValue The new value.
    */
-  @Watch('progress')
+  @Watch("progress")
   handleProgress(newValue: number): void {
     this.progress = Math.max(0.0, Math.min(1.0, newValue));
   }
@@ -49,12 +48,12 @@ export class ProgressBar {
     return (
       <Host
         class={{
-          'fade-out': this.fadeOut && this.progress >= 1.0
+          "fade-out": this.fadeOut && this.progress >= 1.0,
         }}
       >
         <div
           style={{
-            width: (this.progress * 100) + '%'
+            width: this.progress * 100 + "%",
           }}
         />
       </Host>
